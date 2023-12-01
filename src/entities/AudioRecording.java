@@ -4,17 +4,19 @@ import interfaces.VolumeAdjustable;
 
 public class AudioRecording extends PlayableElement implements VolumeAdjustable {
 
-    public int volume = 5;
+    public int volume;
 
     public AudioRecording(String title, int duration) {
+
         super(title, duration);
+        this.volume = 5;
     }
 
     @Override
     public void play() {
         StringBuilder playString = new StringBuilder();
         playString.append("Recording: ").append(this.title).append(" - volume:");
-        playString.append(" !".repeat(Math.max(0, this.volume)));
+        playString.append(" !".repeat(this.volume));
         for(int j=0;j<this.duration;j++){
             System.out.println(playString);
         }

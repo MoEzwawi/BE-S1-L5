@@ -1,4 +1,5 @@
 import entities.AudioRecording;
+import entities.Image;
 import entities.Video;
 
 public class MultimediaPlayer {
@@ -12,5 +13,10 @@ public class MultimediaPlayer {
         video.increaseBrighness();
         video.increaseBrighness();
         video.play();
+        Image foto = new Image("foto");
+        foto.decreaseBrighness();
+        foto.decreaseBrighness();
+        foto.decreaseBrighness();
+        foto.show();
     }
 }
