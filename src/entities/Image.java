@@ -26,4 +26,12 @@ public class Image extends MultimediaElement implements BrightnessAdjustable {
     public void decreaseBrighness() {
         if (this.brightness > 0) this.brightness--;
     }
+
+    public int getBrightness() {
+        return brightness;
+    }
+
+    public void setBrightness(int brightness) {
+        this.brightness = brightness;
+    }
 }

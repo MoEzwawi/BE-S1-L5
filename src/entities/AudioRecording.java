@@ -22,6 +22,14 @@ public class AudioRecording extends PlayableElement implements VolumeAdjustable 
         }
     }
 
+    public int getVolume() {
+        return volume;
+    }
+
+    public void setVolume(int volume) {
+        this.volume = volume;
+    }
+
     @Override
     public void turnUpVolume() {
         if (this.volume < 10) this.volume++;

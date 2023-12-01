@@ -45,4 +45,20 @@ public class Video extends PlayableElement implements VolumeAdjustable, Brightne
     public void turnDownVolume() {
         if(this.volume > 0) this.volume--;
     }
+
+    public int getVolume() {
+        return volume;
+    }
+
+    public int getBrightness() {
+        return brightness;
+    }
+
+    public void setVolume(int volume) {
+        this.volume = volume;
+    }
+
+    public void setBrightness(int brightness) {
+        this.brightness = brightness;
+    }
 }
