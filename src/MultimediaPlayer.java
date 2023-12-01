@@ -140,6 +140,5 @@ public class MultimediaPlayer {
                 contentChooser = Integer.parseInt(input.nextLine());
         }
         input.close();
-
     }
 }
