@@ -13,18 +13,20 @@ public class AudioRecording extends PlayableElement implements VolumeAdjustable 
     @Override
     public void play() {
         StringBuilder playString = new StringBuilder();
-        for (int i=0;i<volume;i++){
-
+        playString.append("Recording: ").append(this.title).append(" - volume:");
+        playString.append(" !".repeat(Math.max(0, this.volume)));
+        for(int j=0;j<this.duration;j++){
+            System.out.println(playString);
         }
     }
 
     @Override
     public void turnUpVolume() {
-        this.volume++;
+        if (this.volume < 10) this.volume++;
     }
 
     @Override
     public void turnDownVolume() {
-        this.volume--;
+        if(this.volume > 0) this.volume--;
     }
 }
