@@ -133,12 +133,13 @@ public class MultimediaPlayer {
                 } else {
                     ((PlayableElement) contentsArray[contentChooser-1]).play();
                 }
-            System.out.println(" ");
-            System.out.println("Please choose an other multimedia element to play");
-            System.out.println("by typing a number from 1 to 5");
-            System.out.println("(or press 0 to exit)");
-            contentChooser = Integer.parseInt(input.nextLine());
+                System.out.println(" ");
+                System.out.println("Please choose an other multimedia element to play");
+                System.out.println("by typing a number from 1 to 5");
+                System.out.println("(or press 0 to exit)");
+                contentChooser = Integer.parseInt(input.nextLine());
         }
         input.close();
+
     }
 }
